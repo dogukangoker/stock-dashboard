@@ -1,0 +1,33 @@
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #f9f9f9;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .active {
+    background-color: #9198ff;
+    width: 100%;
+  }
+
+  .inactive {
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+}

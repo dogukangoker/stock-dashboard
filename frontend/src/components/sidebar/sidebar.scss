@@ -1,0 +1,49 @@
+@import "../../styles/colors.scss";
+
+.sidebar {
+  background-color: $secondary;
+  width: 240px;
+  height: 100vh;
+  padding: 24px 0;
+
+  &__logo {
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    color: $gray;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &.active {
+      color: $white;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__menu-icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 20px;
+    }
+  }
+}

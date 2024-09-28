@@ -1,0 +1,21 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f8f9fa;
+
+  &__title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+}

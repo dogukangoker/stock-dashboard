@@ -1,0 +1,54 @@
+@import "../../styles/colors.scss";
+
+.page-header {
+  background-color: $white;
+  padding: 16px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title-container {
+    flex: 1;
+  }
+
+  &__title {
+    color: $text;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $gray;
+    font-size: 14px;
+    margin: 4px 0 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__action {
+    padding: 16px;
+  }
+
+  &__user-name {
+    color: $gray;
+    font-size: 14px;
+    margin-left: 16px;
+  }
+
+  &__icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 16px;
+    color: $gray;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

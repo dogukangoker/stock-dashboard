@@ -1,0 +1,21 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__tableHeader {
+      display: flex;
+      justify-content: space-between;
+
+      &__actions {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}

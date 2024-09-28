@@ -1,0 +1,40 @@
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .info-card__icon {
+    margin-right: 10px;
+    color: #3f51b5;
+  }
+
+  .info-card__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .info-card__count {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3f51b5;
+  }
+}
